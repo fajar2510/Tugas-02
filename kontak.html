@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kontak Kami</title>
+
+    <style>
+a:link, a:visited {
+background-color: #f44336;
+color: white;
+padding: 15px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+
+a:hover, a:active {
+background-color: red;
+}
+</style>
+    <a href="index.html" style="color:white; font-size:40px; text-align:justify; margin-top:30px; text-decoration:none">Home</a>
+    <a href="kontak.html" style="color:white; font-size:40px; text-align:justify; margin-top:30px; text-decoration:none">Kontak</a>
+    <a href="tentangkami.html" style="color:white; font-size:40px; text-align:justify; margin-top:30px; text-decoration:none">Tentang Kami</a>
+  </head>
+  <body>
+    <h1 style="color:orange; font-size:40px; text-align:left; border:2px solid blue; padding:20px"> Pengisian Form Sederhana !</h1>
+    <div style="background-color:blue">
+    <h2 style="color:white; font-size:25px; text-align:left;"> Hallo guys</h2>
+    </div>
+    <p style="color:black; font-size:18px; text-align:justify; margin-top:30px"> Dibawah adalah contoh Form sederhana</p>
+
+    <form method="post" action="Proses.php">
+      <fieldset><legend>Form Pengisian Data Personal</legend>
+    <table>
+      <tr>
+        <td> Nama
+        </td>
+        <td><input type="text" name="nama" placeholder="isikan dengan nama lengkap anda ..."required/><br/>
+        </td>
+      </tr>
+      <tr>
+        <td> Jenis Kelamin
+        </td>
+        <td>
+          <input type="radio" name="jk" value="Laki-laki" required/> Laki-Laki
+                        <input type="radio" name="jk" value="Perempuan" required/> Perempuan<br/>
+        </td>
+      </tr>
+      <tr>
+        <td> E-mail
+        </td>
+        <td><input type="e-email" name="e-mail" placeholder="example@example.com" required/><br/>
+        </td>
+      </tr>
+      <tr>
+        <td>   Alamat
+        </td>
+        <td>
+        <input type="alamat" name="alamat" required/><br/>
+      </td>
+      </tr>
+      <tr>
+        <td> Kota
+        </td>
+        <td>
+          <select name="Kota">
+                    <option value="Surabaya">Surabaya</option>
+                    <option value="Malang">Malang</option>
+                    <option value="Kediri">Kediri</option>
+                    <option value="Ngawi">Ngawi</option>
+                    <option value="Jember">Jember</option>
+                </select>
+          <br/>
+        </td>
+      </tr>
+      <tr>
+        <td>   Pesan
+        </td>
+        <td>
+          <textarea name="pesan"> </textarea> <br/>
+        </td>
+      </tr>
+      <tr>
+        <td> <input type="reset" value="Reset"/></td> <br/>
+      </tr>
+      <tr>
+        <td> <input type="submit" value="Kirim Data" /></td> <br/>
+      </tr>
+    </table>
+    </fieldset>
+    </form>
+  </body>
+</html>
